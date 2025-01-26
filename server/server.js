@@ -25,7 +25,7 @@ const app = express();
 const server = new grpc.Server();
 
 const expressPort = process.env.EXPRESS_PORT || 3000;
-const proxyPort = process.env.PROXY_PORT || 8080;
+const proxyPort = process.env.PROXY_PORT || 5000;
 const grpcPort = process.env.GRPC_PORT || 4000;
 
 const __dirname = path.resolve();

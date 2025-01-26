@@ -8,6 +8,7 @@ export default defineConfig({
   server: {
     host: true, // Expose the server to external access
     port: 5173, // Specify the port if needed
+    allowedHosts: ['speakq1.onrender.com']
   },
   plugins: [react(), tailwindcss()],
   resolve: {

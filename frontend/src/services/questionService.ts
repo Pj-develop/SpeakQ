@@ -6,8 +6,8 @@ import { QuestionServiceClient } from '../proto/question.client';
 const transport = new GrpcWebFetchTransport({
   baseUrl:
     import.meta.env.MODE === 'development'
-      ? 'http://localhost:8080'
-      : 'https://your-production-url',
+      ? 'https://speakq.onrender.com'
+      : 'https://speakq.onrender.com',
 });
 
 const client = new QuestionServiceClient(transport);
