@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White background */
+    --foreground: 222.2 47.4% 11.2%; /* Dark text */
+    --muted: 210 40% 96.1%; /* Light muted elements */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Dark text on muted elements */
+    --popover: 0 0% 100%; /* White popover background */
+    --popover-foreground: 222.2 47.4% 11.2%; /* Dark text on popover */
+    --border: 214.3 31.8% 91.4%; /* Light border */
+    --input: 214.3 31.8% 91.4%; /* Light input background */
+    --card: 0 0% 100%; /* White card background */
+    --card-foreground: 222.2 47.4% 11.2%; /* Dark text on card */
+    --primary: 222.2 47.4% 11.2%; /* Dark primary color */
+    --primary-foreground: 210 40% 98%; /* Light text on primary elements */
+    --secondary: 210 40% 96.1%; /* Light secondary color */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark text on secondary elements */
+    --accent: 210 40% 96.1%; /* Light accent color */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark text on accent elements */
+    --destructive: 0 100% 50%; /* Bright red for destructive actions */
+    --destructive-foreground: 210 40% 98%; /* Light text on destructive elements */
+    --ring: 215 20.2% 65.1%; /* Light ring color */
+    --radius: 0.5rem; /* Border radius */
+}
+ 
+.dark {
+  --background: 224 71% 4%; /* Dark background */
+  --foreground: 213 31% 91%; /* Light text */
+  --muted: 223 47% 11%; /* Dark muted elements */
+  --muted-foreground: 215.4 16.3% 56.9%; /* Light text on muted elements */
+  --accent: 216 34% 17%; /* Dark accent color */
+  --accent-foreground: 210 40% 98%; /* Light text on accent elements */
+  --popover: 224 71% 4%; /* Dark popover background */
+  --popover-foreground: 215 20.2% 65.1%; /* Light text on popover */
+  --border: 216 34% 17%; /* Dark border */
+  --input: 216 34% 17%; /* Dark input background */
+  --card: 224 71% 4%; /* Dark card background */
+  --card-foreground: 213 31% 91%; /* Light text on card */
+  --primary: 210 40% 98%; /* Light primary color */
+  --primary-foreground: 222.2 47.4% 1.2%; /* Dark text on primary elements */
+  --secondary: 222.2 47.4% 11.2%; /* Dark secondary color */
+  --secondary-foreground: 210 40% 98%; /* Light text on secondary elements */
+  --destructive: 0 63% 31%; /* Darker red for destructive actions */
+  --destructive-foreground: 210 40% 98%; /* Light text on destructive elements */
+  --ring: 216 34% 17%; /* Dark ring color */
+  --radius: 0.5rem; /* Border radius */
+}
+}
