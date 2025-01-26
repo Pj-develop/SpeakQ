@@ -25,14 +25,6 @@ export default defineConfig({
       },
     },
   },
-  server: {
-    proxy: {
-      '/random.RandomService': {
-        target: 'http://0.0.0.0:8080', // Your gRPC server address
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
+  
   
 })
