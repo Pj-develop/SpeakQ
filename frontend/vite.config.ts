@@ -5,6 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 import path from "path"
 
 export default defineConfig({
+  server: {
+    host: true, // Expose the server to external access
+    port: 5173, // Specify the port if needed
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -24,7 +28,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/random.RandomService': {
-        target: 'http://localhost:8080', // Your gRPC server address
+        target: 'http://0.0.0.0:8080', // Your gRPC server address
         changeOrigin: true,
         secure: false,
       },
