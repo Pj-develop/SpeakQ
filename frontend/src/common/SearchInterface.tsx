@@ -8,6 +8,7 @@ import { QuestionCard } from "@/common/QuestionCard";
 import { QuestionType } from '@/types/questionTypes';
 import { questionService } from "@/services/questionService";
 
+
 export function SearchInterface() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<QuestionType[]>([]);
@@ -48,7 +49,7 @@ export function SearchInterface() {
         };
       });
 
-      setResults(validQuestions);
+      setResults(validQuestions as unknown as QuestionType[]);
       setTotalCount(response.count || 0);
     } catch (err) {
       console.error('Error during search:', err);

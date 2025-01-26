@@ -1,4 +1,3 @@
-import React from 'react';
 import { SearchInterface } from '@/common/SearchInterface';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon} from 'lucide-react';
